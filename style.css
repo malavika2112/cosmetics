@@ -50,7 +50,7 @@ div#m2 {
   grid-template-columns: 2fr 2fr 2fr 2fr;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
   div.n1 {
     grid-template-columns: 1fr;
   }
