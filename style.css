@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+div.n1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center;
+  color: black;
+  background: rgba(255, 30, 68, 0.699);
+}
+
+input {
+  width: 300px;
+}
+
+div.n2 {
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+}
+
+div.m1 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background: rgb(255, 215, 222);
+}
+.m1 a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+.m1 li {
+  list-style: none;
+}
+a:hover {
+  font-size: 22px;
+  color: rgb(196, 16, 46);
+  transition: 0.5s;
+}
+div #m2 {
+  border-left: solid black 2px;
+}
+
+div#m2 {
+  display: grid;
+  padding: 10px;
+  gap: 5px;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+
+@media screen and (max-width:400px) {
+  div.n1 {
+    grid-template-columns: 1fr;
+  }
+  div#m2{
+    grid-template-columns: repeat(3,1fr) ;
+  }
+}
